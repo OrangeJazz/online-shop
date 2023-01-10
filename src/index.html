@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container header">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-auto logotype"><h1>Dolls for All</h1></div>
+        <div class="col">
+          <ul class="nav align-items-center justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Cart
+                <div class="cart-count">0</div></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="row justify-content-center">
+        <aside class="col">
+          <div class="menu-filters">
+            <div class="row">
+              <h5>Search</h5>
+              <form class="d-flex search">
+                <input
+                  class="form-control mr-2 search-input"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  autofocus
+                  autocomplete="off"
+                />
+              </form>
+            </div>
+            <div class="row">
+              <h5>Sort by</h5>
+              <select
+                class="form-select form-select-lg mb-3"
+                aria-label=".form-select-lg example"
+              >
+                <option selected value="az">from A to Z</option>
+                <option value="za">from Z to A</option>
+                <option value="old-new">from old to new</option>
+                <option value="new-old">from new to old</option>
+                <option value="rare">rare before</option>
+                <option value="not-rare">not rare before</option>
+              </select>
+            </div>
+
+            <div class="row">
+              <h5>Brand</h5>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="Brand"
+                  value="Barbie"
+                  id="Barbie"
+                />
+                <label class="form-check-label" for="Barbie"> Barbie </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="Brand"
+                  value="Pullip"
+                  id="Pullip"
+                />
+                <label class="form-check-label" for="Pullip"> Pullip </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="Brand"
+                  value="Blythe"
+                  id="Blythe"
+                />
+                <label class="form-check-label" for="Blythe"> Blythe </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="Brand"
+                  value="Iplehouse"
+                  id="Iplehouse"
+                />
+                <label class="form-check-label" for="Iplehouse">
+                  Iplehouse
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="Brand"
+                  value="Other"
+                  id="Other"
+                />
+                <label class="form-check-label" for="Other"> Other</label>
+              </div>
+            </div>
+            <div class="row">
+              <h5 class="slider-header">Year of manufacture</h5>
+              <div id="slider-year"></div>
+            </div>
+            <div class="row">
+              <h5>Type of the Doll</h5>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="Type"
+                  value="OOAK"
+                  id="OOAK"
+                />
+                <label class="form-check-label" for="OOAK"> OOAK </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="Type"
+                  value="BJD"
+                  id="BJD"
+                />
+                <label class="form-check-label" for="BJD"> BJD Doll </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="Type"
+                  value="antique"
+                  id="antique"
+                />
+                <label class="form-check-label" for="antique">
+                  Antique Doll
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="Type"
+                  value="play"
+                  id="play"
+                />
+                <label class="form-check-label" for="play">
+                  Factory Play Doll
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="Type"
+                  value="collection"
+                  id="collection"
+                />
+                <label class="form-check-label" for="collection">
+                  Factory Collection Doll
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <h5>Outfit</h5>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="Outfit"
+                  value="full"
+                  id="Full"
+                />
+                <label class="form-check-label" for="Full"> Full </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="Outfit"
+                  value="wig and makeup"
+                  id="Only makeup and wig"
+                />
+                <label class="form-check-label" for="Only makeup and wig">
+                  Only makeup and wig
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="Outfit"
+                  value="only makeup"
+                  id="Only makeup"
+                />
+                <label class="form-check-label" for="Only makeup">
+                  Only makeup
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="Outfit"
+                  value="none"
+                  id="None"
+                />
+                <label class="form-check-label" for="None"> None </label>
+              </div>
+            </div>
+            <div class="row">
+              <h5 class="slider-header">Hight, cm</h5>
+              <div id="slider-height"></div>
+            </div>
+            <div class="row">
+              <h5>Rarety of the Doll</h5>
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="Rarety"
+                  id="rare"
+                />
+                <label class="form-check-label" for="rare"><h5>Rare</h5></label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary reset-filters"
+                >
+                  Reset filters
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary reset-options"
+                >
+                  Reset options
+                </button>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <section class="col-9">
+          <div class="row cards"></div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <a href="https://rs.school/js/" class="rs-logo"
+              ><img src="https://rs.school/images/rs_school.svg" class="logo" />
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="https://github.com/orangejazz" class="author"
+              >Mariya Vasileva</a
+            >
+          </div>
+          <div class="col-3">
+            <span>2022</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
